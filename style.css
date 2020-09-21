@@ -33,7 +33,7 @@ header {
   color: black;
 }
 
-#logo:hover{
+#logo:hover {
   color: #851e3e;
 }
 
@@ -72,22 +72,22 @@ header nav ul li a:hover::after {
 
 /* CONTENIDO */
 
-.caja{
+.caja {
   display: flex;
   justify-content: center;
 }
 
-.caja .card{
+.caja .card {
   position: relative;
 }
 
-.caja .card .face{
+.caja .card .face {
   width: 300px;
   height: 200px;
   transition: 0.5s;
 }
 
-.caja .card .face.face1{
+.caja .card .face.face1 {
   position: relative;
   background: #651e3e;
   display: flex;
@@ -97,29 +97,29 @@ header nav ul li a:hover::after {
   transform: translateY(100px);
 }
 
-.caja .card:hover .face.face1{
+.caja .card:hover .face.face1 {
   background: #651e3e;
   transform: translateY(0);
 }
 
-.caja .card .face.face1 .content{
+.caja .card .face.face1 .content {
   opacity: 0.2;
   transition: 0.5s;
 }
 
-.caja .card .face.face1 .content i{
+.caja .card .face.face1 .content i {
   font-size: 5rem;
 }
 
-.caja .card:hover .face.face1 .content{
+.caja .card:hover .face.face1 .content {
   opacity: 1;
 }
 
-.caja .card .face.face1 .content img{
+.caja .card .face.face1 .content img {
   max-width: 100px;
 }
 
-.caja .card .face.face1 .content h3{
+.caja .card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -127,7 +127,7 @@ header nav ul li a:hover::after {
   font-size: 1.5em;
 }
 
-.caja .card .face.face2{
+.caja .card .face.face2 {
   position: relative;
   background: #fff;
   display: flex;
@@ -139,18 +139,18 @@ header nav ul li a:hover::after {
   transform: translateY(-100px);
 }
 
-.caja .card:hover .face.face2{
+.caja .card:hover .face.face2 {
   transform: translateY(0);
 }
 
-.caja .card .face.face2 .content p{
+.caja .card .face.face2 .content p {
   margin: 0;
   padding: 0;
 }
 
-.caja .card .face.face2 .content a{
+.caja .card .face.face2 .content a {
   margin: 15px 0 0;
-  display:  inline-block;
+  display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #333;
@@ -159,15 +159,14 @@ header nav ul li a:hover::after {
   cursor: pointer;
 }
 
-.caja .card .face.face2 .content a:hover{
+.caja .card .face.face2 .content a:hover {
   background: #851e3e;
   color: #fff;
 }
 
-
 /* WEB DE INTRO */
 
-.intro{
+.intro {
   background: black;
   position: fixed;
   top: 0;
@@ -180,19 +179,34 @@ header nav ul li a:hover::after {
   z-index: 1;
 }
 
-
-.intro-text{
+.intro-text {
   color: aliceblue;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 3rem;
 }
 
-.hide{
+.hide {
   background: black;
   overflow: hidden;
 }
 
-.hide span{
+.hide span {
   transform: translateY(100%);
   display: inline-block;
+}
+
+@media screen and (max-width:768px){
+
+  .container{
+    padding: 0;
+    margin: 0;
+  }
+
+  #logo{
+    margin: auto;
+  }
+
+  header nav ul{
+    display: none;
+  }
 }
