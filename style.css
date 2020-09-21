@@ -108,6 +108,8 @@ header nav ul li a:hover::after {
 }
 
 .caja .card .face.face1 .content i {
+  display: flex;
+  justify-content: center;
   font-size: 5rem;
 }
 
