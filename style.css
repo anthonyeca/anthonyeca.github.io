@@ -197,6 +197,10 @@ header nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 1350px) {
+  header{
+    padding: 0;
+  }
+
   #logo {
     margin: auto;
   }
