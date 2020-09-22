@@ -9,11 +9,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  min-height: 100vh;
-  padding: 0rem 10rem;
-  overflow: hidden;
+body {
   background: url("img/Background.jpg");
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -23,6 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 30px;
+  padding: 0rem 10rem;
 }
 
 #logo {
@@ -73,17 +72,17 @@ header nav ul li a:hover::after {
 /* CONTENIDO */
 
 .caja {
+  margin: auto;
   display: flex;
-  justify-content: center;
-}
-
-.caja .card {
+  width: 1000px;
   position: relative;
+  justify-content: space-between;
+  top: 9rem;
 }
 
 .caja .card .face {
   width: 300px;
-  height: 200px;
+  height: 190px;
   transition: 0.5s;
 }
 
@@ -94,7 +93,7 @@ header nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  transform: translateY(100px);
+  transform: translateY(90px);
 }
 
 .caja .card:hover .face.face1 {
@@ -162,7 +161,7 @@ header nav ul li a:hover::after {
 }
 
 .caja .card .face.face2 .content a:hover {
-  background: #851e3e;
+  background: #651e3e;
   color: #fff;
 }
 
@@ -197,18 +196,31 @@ header nav ul li a:hover::after {
   display: inline-block;
 }
 
-@media screen and (max-width:768px){
-
-  .container{
-    padding: 0;
-    margin: 0;
-  }
-
-  #logo{
+@media screen and (max-width: 1350px) {
+  #logo {
     margin: auto;
   }
 
-  header nav ul{
+  header nav ul {
     display: none;
+  }
+
+  .caja {
+    flex-direction: column;
+    width: 300px;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    padding: 0;
+  }
+  #logo {
+    margin: auto;
+  }
+
+  .intro-text {
+    font-size: 2rem;
   }
 }
