@@ -213,11 +213,9 @@ header nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 360px) {
-  header {
+  
+  header{
     padding: 0;
-  }
-  #logo {
-    margin: auto;
   }
 
   .intro-text {
