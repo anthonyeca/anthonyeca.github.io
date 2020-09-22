@@ -1,4 +1,4 @@
-#[Live Version](https://anthonyeca.github.io/)
+# [Live Version](https://anthonyeca.github.io/)
 
 I made this website to be my portafolio for my projects.
 
