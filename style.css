@@ -196,33 +196,91 @@ header nav ul li a:hover::after {
   display: inline-block;
 }
 
+
+/*NAV BURGER STYLE*/
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+/*RESPONSIVE*/
+
 @media screen and (max-width: 1350px) {
-  header{
-    padding: 0;
-  }
-
-  #logo {
-    margin: auto;
-  }
-
-  header nav ul {
-    display: none;
-  }
 
   .caja {
     flex-direction: column;
     width: 300px;
     top: 0;
   }
+
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
+
+  #logo{
+    margin-left: 1rem;
+  }
   
   header{
     padding: 0;
+    margin-right: 0.5rem;
   }
 
-  .intro-text {
-    font-size: 2rem;
+
+  .caja {
+    flex-direction: column;
+    width: 300px;
+    top: 0;
   }
+
+}
+
+@media screen and (max-width: 620px) {
+  .checkbtn{
+    display: flex;
+  }
+
+  .checkbtn:hover{
+    color: #651e3e;
+  }
+
+  header nav ul {
+    position: fixed;
+    display: block;
+    width: 90%;
+    height: 100vh;
+    background-color: rgba(193, 205, 217, 0.97);
+    z-index: 10;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+    border-radius: 1%;
+  }
+
+  header nav ul li{
+    display: block;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  header nav ul li a{
+    padding: 10px;
+    
+  }
+
+
+  #check:checked ~ ul{
+    right: 0;
+  }
+
 }
