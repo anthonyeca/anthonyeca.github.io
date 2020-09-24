@@ -196,10 +196,9 @@ header nav ul li a:hover::after {
   display: inline-block;
 }
 
-
 /*NAV BURGER STYLE*/
 
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: black;
   line-height: 80px;
@@ -208,48 +207,37 @@ header nav ul li a:hover::after {
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
 /*RESPONSIVE*/
 
 @media screen and (max-width: 1350px) {
-
   .caja {
     flex-direction: column;
     width: 300px;
     top: 0;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
-  #logo{
+  #logo {
     margin-left: 1rem;
   }
-  
-  header{
+
+  header {
     padding: 0;
     margin-right: 0.5rem;
   }
-
-
-  .caja {
-    flex-direction: column;
-    width: 300px;
-    top: 0;
-  }
-
 }
 
 @media screen and (max-width: 620px) {
-  .checkbtn{
+  .checkbtn {
     display: flex;
   }
 
-  .checkbtn:hover{
+  .checkbtn:hover {
     color: #651e3e;
   }
 
@@ -263,24 +251,21 @@ header nav ul li a:hover::after {
     top: 80px;
     right: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
     border-radius: 1%;
   }
 
-  header nav ul li{
+  header nav ul li {
     display: block;
     padding: 0;
     margin-top: 10px;
   }
 
-  header nav ul li a{
+  header nav ul li a {
     padding: 10px;
-    
   }
 
-
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     right: 0;
   }
-
 }
