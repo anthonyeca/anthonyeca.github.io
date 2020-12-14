@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6bd76291e3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <title>Anthonyeca</title>
 </head>
 
@@ -79,7 +80,7 @@
         </div>
 
    
-    <!-- INTRO TEXT -->
+    <!-- INTRO TEXT 
     <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
@@ -93,12 +94,34 @@
             </h1>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous">
-        </script>
-    <script src="app.js"></script>
+    </script>
+    <script src="app.js"></script>-->
+    
+    <script type="text/javascript">var gamer = [103, 97, 109, 101, 114].join(),
+        $div = $('div');
+    
+    $(window).on('keypress', function(e) {
+        var $this = $(this),
+            gap = e.timeStamp - ($this.data('time') || e.timeStamp),
+            chars = $this.data('chars') || [];
+        
+        if (gap > 1000) {
+            chars = [];
+        }
+        
+        chars.push(e.which);
+        if (chars.join() === gamer) {
+            window.open("https://anthonyeca.github.io/secret",'_blank');
+        }
+        
+        $this.data('chars', chars);
+        $this.data('time', e.timeStamp);
+        
+    });</script>
 </body>
 
 </html>

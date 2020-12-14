@@ -69,6 +69,21 @@ header nav ul li a:hover::after {
   width: 100%;
 }
 
+/*NAV BURGER STYLE*/
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 /* CONTENIDO */
 
 .caja {
@@ -165,7 +180,7 @@ header nav ul li a:hover::after {
   color: #fff;
 }
 
-/* WEB DE INTRO */
+/* WEB DE INTRO 
 
 .intro {
   background: black;
@@ -196,20 +211,7 @@ header nav ul li a:hover::after {
   display: inline-block;
 }
 
-/*NAV BURGER STYLE*/
 
-.checkbtn {
-  font-size: 30px;
-  color: black;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
 
 /*RESPONSIVE*/
 
