@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400&display=swap");
 
 /*colors #051e3e • #251e3e • #451e3e • #651e3e • #851e3e*/
+/*colors 2.0 #23313d  #4e7f7d  #cbffd8 */
 
 * {
   padding: 0;
@@ -34,7 +35,7 @@ header {
 }
 
 #logo:hover {
-  color: #851e3e;
+  color: #4e7f7d;
 }
 
 header nav ul {
@@ -55,7 +56,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #851e3e;
+  color: #4e7f7d;
 }
 
 header nav ul li a::after {
@@ -63,7 +64,7 @@ header nav ul li a::after {
   width: 0px;
   height: 1px;
   display: block;
-  background: #851e3e;
+  background: #4e7f7d;
   transition: 300ms;
 }
 
@@ -85,7 +86,14 @@ header nav ul li a:hover::after {
 #check {
   display: none;
 }
+i {
+  color: white;
+}
 
+.fa,
+.fas {
+  z-index: 1;
+}
 /* CONTENIDO */
 
 .caja {
@@ -106,7 +114,7 @@ header nav ul li a:hover::after {
 
 .caja .card .face.face1 {
   position: relative;
-  background: #651e3e;
+  background: #4e7f7d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +123,7 @@ header nav ul li a:hover::after {
 }
 
 .caja .card:hover .face.face1 {
-  background: #651e3e;
+  background: #4e7f7d;
   transform: translateY(0);
 }
 
@@ -179,7 +187,7 @@ header nav ul li a:hover::after {
 }
 
 .caja .card .face.face2 .content a:hover {
-  background: #651e3e;
+  background: #4e7f7d;
   color: #fff;
 }
 
@@ -243,7 +251,7 @@ header nav ul li a:hover::after {
   }
 
   .checkbtn:hover {
-    color: #651e3e;
+    color: #4e7f7d;
   }
 
   header nav ul {
@@ -251,7 +259,7 @@ header nav ul li a:hover::after {
     display: block;
     width: 90%;
     height: 100vh;
-    background-color: rgba(193, 205, 217, 0.97);
+    background-color: rgba(78, 127, 125, 0.97);
     z-index: 10;
     top: 80px;
     right: -100%;
