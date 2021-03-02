@@ -10,7 +10,7 @@
 }
 
 body {
-  background: url("img/Background.jpg");
+  /*background: url("img/Background.jpg");*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -29,7 +29,8 @@ header {
   font-weight: lighter;
   font-size: 2rem;
   text-decoration: none;
-  color: black;
+  color: #eee;
+  z-index: 1;
 }
 
 #logo:hover {
@@ -43,11 +44,12 @@ header nav ul {
 
 header nav ul li {
   padding-left: 8rem;
+  z-index: 1;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #eee;
   font-size: 20px;
   display: inline-block;
 }
@@ -93,6 +95,7 @@ header nav ul li a:hover::after {
   position: relative;
   justify-content: space-between;
   top: 9rem;
+  z-index: 1;
 }
 
 .caja .card .face {
@@ -145,7 +148,7 @@ header nav ul li a:hover::after {
 
 .caja .card .face.face2 {
   position: relative;
-  background: #fff;
+  background: #eee;
   display: flex;
   justify-content: center;
   align-items: center;

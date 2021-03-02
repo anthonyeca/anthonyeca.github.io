@@ -7,58 +7,60 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6bd76291e3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="warpspeed.min.js"></script>
     <title>Anthonyeca</title>
 </head>
 
 <body>
     <!--HEADER -->
-   
-        <header>
-            <a href="https://anthonyeca.github.io" id="logo"> AnthonyECA</a>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <ul>
-                    <li><a href="https://anthonyeca.github.io/projects/">Projects</a></li>
-                    <li><a href="https://github.com/anthonyeca" target="_blank">Repository</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- CONTENIDO -->
-        <div class="caja">
 
-            <div class="card card1">
-                <div class="face face1">
-                    <div class="content">
-                        <i class="far fa-user-circle"></i>
-                        <h3>About me</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Hello, my name is Anthony. I'm learing how to code and figure out how to do some programming magic tricks</p>
-                    </div>
+    <header>
+        <a href="https://anthonyeca.github.io" id="logo"> AnthonyECA</a>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="https://anthonyeca.github.io/projects/">Projects</a></li>
+                <li><a href="https://github.com/anthonyeca" target="_blank">Repository</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CONTENIDO -->
+    <div class="caja">
+
+        <div class="card card1">
+            <div class="face face1">
+                <div class="content">
+                    <i class="far fa-user-circle"></i>
+                    <h3>About me</h3>
                 </div>
             </div>
-
-
-            <div class="card card2">
-                <div class="face face1">
-                    <div class="content">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Repository</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <p>Here you can find my Repository with all the code what I'm learing </p>
-                        <a href="https://github.com/anthonyeca" target="_blank">Go</a>
-                    </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Hello, my name is Anthony. I'm learing how to code and figure out how to do some programming
+                        magic tricks</p>
                 </div>
             </div>
-            <!--
+        </div>
+
+
+        <div class="card card2">
+            <div class="face face1">
+                <div class="content">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Repository</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Here you can find my Repository with all the code what I'm learing </p>
+                    <a href="https://github.com/anthonyeca" target="_blank">Go</a>
+                </div>
+            </div>
+        </div>
+        <!--
 
                 <div class="card card3">
                     <div class="face face1">
@@ -77,9 +79,9 @@
             -->
 
 
-        </div>
+    </div>
 
-   
+
     <!-- INTRO TEXT 
     <div class="intro">
         <div class="intro-text">
@@ -100,28 +102,31 @@
         crossorigin="anonymous">
     </script>
     <script src="app.js"></script>-->
-    
-    <script type="text/javascript">var gamer = [103, 97, 109, 101, 114].join(),
-        $div = $('div');
-    
-    $(window).on('keypress', function(e) {
-        var $this = $(this),
-            gap = e.timeStamp - ($this.data('time') || e.timeStamp),
-            chars = $this.data('chars') || [];
-        
-        if (gap > 1000) {
-            chars = [];
-        }
-        
-        chars.push(e.which);
-        if (chars.join() === gamer) {
-            window.open("https://anthonyeca.github.io/secret",'_blank');
-        }
-        
-        $this.data('chars', chars);
-        $this.data('time', e.timeStamp);
-        
-    });</script>
+    <canvas id="canvas" style="position:fixed; top:0; left:0; width:100%; height:100%;"></canvas>
+    <script type="text/javascript">
+        var x = new WarpSpeed("canvas", { "speed": 1.3, "speedAdjFactor": 0.07, "density": 1.9, "shape": "circle", "warpEffect": true, "warpEffectLength": 5, "depthFade": true, "starSize": 3, "backgroundColor": "hsl(263,45%,7%)", "starColor": "#FFFFFF" });
+
+        var gamer = [103, 97, 109, 101, 114].join(),
+            $div = $('div');
+
+        $(window).on('keypress', function (e) {
+            var $this = $(this),
+                gap = e.timeStamp - ($this.data('time') || e.timeStamp),
+                chars = $this.data('chars') || [];
+
+            if (gap > 1000) {
+                chars = [];
+            }
+
+            chars.push(e.which);
+            if (chars.join() === gamer) {
+                window.open("https://anthonyeca.github.io/secret", '_blank');
+            }
+
+            $this.data('chars', chars);
+            $this.data('time', e.timeStamp);
+
+        });</script>
 </body>
 
 </html>
