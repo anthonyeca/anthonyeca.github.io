@@ -236,26 +236,14 @@ i {
     width: 300px;
     top: 0;
   }
-}
-
-@media screen and (max-width: 768px) {
-  #logo {
-    margin-left: 1rem;
-  }
-
-  header {
-    padding: 0;
-    margin-right: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 620px) {
   .checkbtn {
     display: flex;
   }
 
-  .checkbtn:hover {
-    color: var(--color-hover-fuente);
+  header {
+    padding: 0;
+    margin-right: 3rem;
+    margin-left: 3rem;
   }
 
   header nav ul {
