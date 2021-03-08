@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400&display=swap");
 
+:root {
+  --color-hover-fuente: #4e7f7d;
+}
+
 /*colors #051e3e • #251e3e • #451e3e • #651e3e • #851e3e*/
 /*colors 2.0 #23313d  #4e7f7d  #cbffd8 */
 
@@ -35,7 +39,7 @@ header {
 }
 
 #logo:hover {
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
 }
 
 header nav ul {
@@ -56,7 +60,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
 }
 
 header nav ul li a::after {
@@ -64,7 +68,7 @@ header nav ul li a::after {
   width: 0px;
   height: 1px;
   display: block;
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   transition: 300ms;
 }
 
@@ -114,7 +118,7 @@ i {
 
 .caja .card .face.face1 {
   position: relative;
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,7 +127,7 @@ i {
 }
 
 .caja .card:hover .face.face1 {
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   transform: translateY(0);
 }
 
@@ -187,7 +191,7 @@ i {
 }
 
 .caja .card .face.face2 .content a:hover {
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   color: #fff;
 }
 
@@ -251,7 +255,7 @@ i {
   }
 
   .checkbtn:hover {
-    color: #4e7f7d;
+    color: var(--color-hover-fuente);
   }
 
   header nav ul {
