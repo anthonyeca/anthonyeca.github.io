@@ -40,6 +40,7 @@ header {
 
 #logo:hover {
   color: var(--color-hover-fuente);
+  transition: 300ms;
 }
 
 header nav ul {
@@ -61,6 +62,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: var(--color-hover-fuente);
+  transition: 300ms;
 }
 
 header nav ul li a::after {
@@ -193,6 +195,7 @@ i {
 .caja .card .face.face2 .content a:hover {
   background: var(--color-hover-fuente);
   color: #fff;
+  transition: 300ms;
 }
 
 /* WEB DE INTRO 
